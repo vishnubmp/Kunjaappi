@@ -7,20 +7,20 @@
       "projectType": "application",
       "schematics": {},
       "root": "",
-      "sourceRoot": "src",
+      "sourceRoot": "client/src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "outputPath": "../wwwroot",
-            "index": "src/index.html",
-            "main": "src/main.ts",
-            "polyfills": "src/polyfills.ts",
+            "index": "client/src/index.html",
+            "main": "client/src/main.ts",
+            "polyfills": "client/src/polyfills.ts",
             "tsConfig": "client/tsconfig.app.json",
             "assets": [
-              "src/favicon.ico",
-              "src/assets"
+              "client/src/favicon.ico",
+              "client/src/assets"
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
@@ -28,7 +28,7 @@
               "./node_modules/bootswatch/dist/united/bootstrap.css",
               "./node_modules/font-awesome/css/font-awesome.css",
               "./node_modules/ngx-toastr/toastr.css",
-              "src/styles.css"
+              "client/src/styles.css"
             ],
             "scripts": [],
             "vendorChunk": true,
@@ -93,19 +93,19 @@
         "test": {
           "builder": "@angular-devkit/build-angular:karma",
           "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
+            "main": "client/src/test.ts",
+            "polyfills": "client/src/polyfills.ts",
             "tsConfig": "tsconfig.spec.json",
             "karmaConfig": "karma.conf.js",
             "assets": [
-              "src/favicon.ico",
-              "src/assets",
-              "src/manifest.webmanifest"
+              "client/src/favicon.ico",
+              "client/src/assets",
+              "client/src/manifest.webmanifest"
             ],
             "styles": [
               "./node_modules/bootstrap/dist/css/bootstrap.min.css",
               "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
-              "src/styles.css"
+              "client/src/styles.css"
             ],
             "scripts": []
           }
@@ -114,9 +114,9 @@
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
-              "tsconfig.app.json",
-              "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "client/tsconfig.app.json",
+              "client/tsconfig.spec.json",
+              "client/e2e/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
