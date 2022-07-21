@@ -96,7 +96,6 @@
   <ItemGroup>
     <None Include="client\.browserslistrc" />
     <None Include="client\.editorconfig" />
-    <None Include="client\.gitignore" />
     <None Include="client\karma.conf.js" />
     <None Include="client\README.md" />
     <None Include="client\src\assets\.gitkeep" />
