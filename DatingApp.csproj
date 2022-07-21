@@ -1,0 +1,162 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="client\**" />
+    <Content Remove="client\**" />
+    <EmbeddedResource Remove="client\**" />
+    <None Remove="client\**" />
+    <TypeScriptCompile Remove="client\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="client\angular.json" />
+    <Content Include="client\package-lock.json" />
+    <Content Include="client\package.json" />
+    <Content Include="client\src\app\admin\admin-panel\admin-panel.component.css" />
+    <Content Include="client\src\app\admin\admin-panel\admin-panel.component.html" />
+    <Content Include="client\src\app\admin\photo-management\photo-management.component.css" />
+    <Content Include="client\src\app\admin\photo-management\photo-management.component.html" />
+    <Content Include="client\src\app\admin\user-management\user-management.component.css" />
+    <Content Include="client\src\app\admin\user-management\user-management.component.html" />
+    <Content Include="client\src\app\app.component.css" />
+    <Content Include="client\src\app\app.component.html" />
+    <Content Include="client\src\app\errors\not-found\not-found.component.css" />
+    <Content Include="client\src\app\errors\not-found\not-found.component.html" />
+    <Content Include="client\src\app\errors\server-error\server-error.component.css" />
+    <Content Include="client\src\app\errors\server-error\server-error.component.html" />
+    <Content Include="client\src\app\errors\test-errors\test-errors.component.css" />
+    <Content Include="client\src\app\errors\test-errors\test-errors.component.html" />
+    <Content Include="client\src\app\home\home.component.css" />
+    <Content Include="client\src\app\home\home.component.html" />
+    <Content Include="client\src\app\lists\lists.component.css" />
+    <Content Include="client\src\app\lists\lists.component.html" />
+    <Content Include="client\src\app\members\member-card\member-card.component.css" />
+    <Content Include="client\src\app\members\member-card\member-card.component.html" />
+    <Content Include="client\src\app\members\member-detail\member-detail.component.css" />
+    <Content Include="client\src\app\members\member-detail\member-detail.component.html" />
+    <Content Include="client\src\app\members\member-edit\member-edit.component.css" />
+    <Content Include="client\src\app\members\member-edit\member-edit.component.html" />
+    <Content Include="client\src\app\members\member-list\member-list.component.css" />
+    <Content Include="client\src\app\members\member-list\member-list.component.html" />
+    <Content Include="client\src\app\members\member-messages\member-messages.component.css" />
+    <Content Include="client\src\app\members\member-messages\member-messages.component.html" />
+    <Content Include="client\src\app\members\photo-editor\photo-editor.component.css" />
+    <Content Include="client\src\app\members\photo-editor\photo-editor.component.html" />
+    <Content Include="client\src\app\messages\messages.component.css" />
+    <Content Include="client\src\app\messages\messages.component.html" />
+    <Content Include="client\src\app\modals\confirm-dialog\confirm-dialog.component.css" />
+    <Content Include="client\src\app\modals\confirm-dialog\confirm-dialog.component.html" />
+    <Content Include="client\src\app\modals\roles-modal\roles-modal.component.css" />
+    <Content Include="client\src\app\modals\roles-modal\roles-modal.component.html" />
+    <Content Include="client\src\app\nav\nav.component.css" />
+    <Content Include="client\src\app\nav\nav.component.html" />
+    <Content Include="client\src\app\register\register.component.css" />
+    <Content Include="client\src\app\register\register.component.html" />
+    <Content Include="client\src\app\_forms\date-input\date-input.component.css" />
+    <Content Include="client\src\app\_forms\date-input\date-input.component.html" />
+    <Content Include="client\src\app\_forms\text-input\text-input.component.css" />
+    <Content Include="client\src\app\_forms\text-input\text-input.component.html" />
+    <Content Include="client\src\favicon.ico" />
+    <Content Include="client\src\index.html" />
+    <Content Include="client\src\styles.css" />
+    <Content Include="client\tsconfig.app.json" />
+    <Content Include="client\tsconfig.json" />
+    <Content Include="client\tsconfig.spec.json" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.0.1" />
+    <PackageReference Include="CloudinaryDotNet" Version="1.11.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="5.0.0-preview.8.20414.8" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="5.0.11" />
+    <PackageReference Include="Microsoft.TypeScript.MSBuild" Version="4.6.4">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="5.0.0" />
+    <PackageReference Include="SQLite" Version="3.13.0" />
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="6.14.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="client\ssl\" />
+    <Folder Include="SignalR\PresenceTracker\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="client\.browserslistrc" />
+    <None Include="client\.editorconfig" />
+    <None Include="client\.gitignore" />
+    <None Include="client\karma.conf.js" />
+    <None Include="client\README.md" />
+    <None Include="client\src\assets\.gitkeep" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <TypeScriptCompile Include="client\src\app\admin\admin-panel\admin-panel.component.ts" />
+    <TypeScriptCompile Include="client\src\app\admin\photo-management\photo-management.component.ts" />
+    <TypeScriptCompile Include="client\src\app\admin\user-management\user-management.component.ts" />
+    <TypeScriptCompile Include="client\src\app\app-routing.module.ts" />
+    <TypeScriptCompile Include="client\src\app\app.component.spec.ts" />
+    <TypeScriptCompile Include="client\src\app\app.component.ts" />
+    <TypeScriptCompile Include="client\src\app\app.module.ts" />
+    <TypeScriptCompile Include="client\src\app\errors\not-found\not-found.component.ts" />
+    <TypeScriptCompile Include="client\src\app\errors\server-error\server-error.component.ts" />
+    <TypeScriptCompile Include="client\src\app\errors\test-errors\test-errors.component.ts" />
+    <TypeScriptCompile Include="client\src\app\home\home.component.ts" />
+    <TypeScriptCompile Include="client\src\app\lists\lists.component.ts" />
+    <TypeScriptCompile Include="client\src\app\members\member-card\member-card.component.ts" />
+    <TypeScriptCompile Include="client\src\app\members\member-detail\member-detail.component.ts" />
+    <TypeScriptCompile Include="client\src\app\members\member-edit\member-edit.component.ts" />
+    <TypeScriptCompile Include="client\src\app\members\member-list\member-list.component.ts" />
+    <TypeScriptCompile Include="client\src\app\members\member-messages\member-messages.component.ts" />
+    <TypeScriptCompile Include="client\src\app\members\photo-editor\photo-editor.component.ts" />
+    <TypeScriptCompile Include="client\src\app\messages\messages.component.ts" />
+    <TypeScriptCompile Include="client\src\app\modals\confirm-dialog\confirm-dialog.component.ts" />
+    <TypeScriptCompile Include="client\src\app\modals\roles-modal\roles-modal.component.ts" />
+    <TypeScriptCompile Include="client\src\app\nav\nav.component.ts" />
+    <TypeScriptCompile Include="client\src\app\register\register.component.ts" />
+    <TypeScriptCompile Include="client\src\app\_directives\has-role.directive.ts" />
+    <TypeScriptCompile Include="client\src\app\_forms\date-input\date-input.component.ts" />
+    <TypeScriptCompile Include="client\src\app\_forms\text-input\text-input.component.ts" />
+    <TypeScriptCompile Include="client\src\app\_guards\admin.guard.ts" />
+    <TypeScriptCompile Include="client\src\app\_guards\auth.guard.ts" />
+    <TypeScriptCompile Include="client\src\app\_guards\prevent-unsaved-changes.guard.ts" />
+    <TypeScriptCompile Include="client\src\app\_interceptors\error.interceptor.ts" />
+    <TypeScriptCompile Include="client\src\app\_interceptors\jwt.interceptor.ts" />
+    <TypeScriptCompile Include="client\src\app\_interceptors\loading.interceptor.ts" />
+    <TypeScriptCompile Include="client\src\app\_models\group.ts" />
+    <TypeScriptCompile Include="client\src\app\_models\member.ts" />
+    <TypeScriptCompile Include="client\src\app\_models\message.ts" />
+    <TypeScriptCompile Include="client\src\app\_models\pagination.ts" />
+    <TypeScriptCompile Include="client\src\app\_models\photo.ts" />
+    <TypeScriptCompile Include="client\src\app\_models\user.ts" />
+    <TypeScriptCompile Include="client\src\app\_models\userParams.ts" />
+    <TypeScriptCompile Include="client\src\app\_modules\shared.module.ts" />
+    <TypeScriptCompile Include="client\src\app\_resolvers\member-detailed.resolver.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\account.service.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\admin.service.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\busy.service.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\confirm.service.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\members.service.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\message.service.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\paginationHelper.ts" />
+    <TypeScriptCompile Include="client\src\app\_services\presence.service.ts" />
+    <TypeScriptCompile Include="client\src\environments\environment.prod.ts" />
+    <TypeScriptCompile Include="client\src\environments\environment.ts" />
+    <TypeScriptCompile Include="client\src\main.ts" />
+    <TypeScriptCompile Include="client\src\polyfills.ts" />
+    <TypeScriptCompile Include="client\src\test.ts" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,3 @@
+[submodule "Kunjaappi"]
+	path = Kunjaappi
+	url = https://github.com/vishnubmp/Kunjaappi.git
